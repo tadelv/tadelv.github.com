@@ -1,0 +1,150 @@
+/*
+I would like to thank Marco from Instapaper, his css is awesome
+*/
+body {
+     font-family: 'Trebuchet MS', 'Arial', sans-serif;
+     font-size: 100%;
+     margin: 0px auto 0px auto;
+     width: 860px;
+     background-color: #f4f4f4;
+     position: relative;
+}
+
+#logo {
+    font-family: 'Lucida Grande', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.2;
+    border-bottom: 2px solid #444;
+}
+#logo a { color: #000; text-decoration: none; }
+h1#logo { font-size: 40px; font-weight: normal; margin: 0; }
+
+a { color: #444; text-decoration: none; font-weight: bold;}
+a:visited { color: #777; }
+a:hover { text-decoration: underline; }
+
+a img {border: 0px;}
+.clear { clear: both; line-height: 1px; font-size: 1px; margin: 1px; }
+#header { margin-bottom: 30px; }
+
+#content { 
+	margin-top:10px;
+    clear: both; 
+    font-size: 14px;
+	text-shadow: #FFF 0px 1px 0px;
+}
+
+#footer {
+    clear: both;
+    margin: 80px auto 20px auto;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#box {
+	width: 50%;
+}
+
+#box h2 {
+	width: 55%;
+	border-bottom: 1px solid #aaa;
+	color: #333;
+}
+
+#box p {
+	margin: 10px 20% 30px 20px;
+	text-align:justify;
+}
+
+#twitter_update_list {
+	margin-bottom: 10px;
+}
+
+#box img {
+	float: right;
+	padding:5px;
+	margin: 0px 15px;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float: right;
+}
+
+
+#container {
+	margin-top:10px;
+	width: 100%;
+}
+
+#main_menu {
+	float: right;
+}
+
+#main_menu li {
+	display:inline;
+	list-style-type: none;
+	margin-right: 10px;
+}
+
+#main_menu a {
+	color: #999;
+}
+
+#main_menu a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+#box.project_detail {
+	width:100%;
+}
+
+#box.project_detail p {
+	margin-right: 45%;
+	margin-bottom: 80px;
+}
+
+
+#iphone_frame {
+	background:url("/images/iphone_frame.png") repeat scroll 0 0 transparent;
+	height:440px;
+	padding: 76px 0 0 21px;
+	position:relative;
+	width:236px;
+	float: right;
+}
+
+#iphone_frame a.show {  
+        z-index:500  
+}
+
+#gallery {
+	position:relative;
+	height:318px;
+	overflow: hidden;
+	margin: 5px 0px 0px 3px;
+	padding: 0px;
+	width: 212px;
+}
+	#gallery a {
+		float:left;
+		width: 212px;
+		padding: 0px;
+		margin: 0px;
+		position:absolute;
+		background: green;
+	}
+	
+	#gallery a img {
+		margin: 0px;
+		padding: 0px;
+		border:none;
+	}

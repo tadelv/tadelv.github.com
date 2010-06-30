@@ -1,59 +1,58 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">	
-<head>
-	<title>Hello World!</title>
-	<style type="text/css">
-		body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
-			margin: 0; padding: 0; border: 0;
-		}
+---
+layout: default
+title: Hello
+---
+	<!--stuff -->
+<div id='container'>
+	<div id='box' class='left'>
+		<a href="http://github.com/tadelv"><img src="https://github.com/images/modules/header/logov3.png"></img></a>
+		<h2>GitHub</h2>
+		<p>Take a look at my open source stuff, maybe you will find something interesting...</p>
+		<ul>
+			<li><a href='http://github.com/tadelv/CLLocation-Bearing'>CLLocation+Bearing</a></li>
+			<li><a href='http://github.com/tadelv/tadelv.github.com'>The page you are looking at</a></li>
+			<li><a href='http://github.com/tadelv/VTDiskKalk'>VTDiskKalk</a></li>
+			<li><a href='http://github.com/tadelv/rotax'>rotax</a></li>
+		</ul>
+		
+		<h2>Friends</h2>
+		<p>I couldn't live without them (no particular order, that's what unordered lists are for).</p>
+		<ul>
+			<li><a href='http://twitter.com/t3y4'>Teja</a></li>
+			<li><a href='http://www.bukovinski.com'>Matej Bukovinski</a></li>
+			<li><a href='http://www.codeart.si'>CodeArt</a></li>
+			<li><a href='http://www.siel.si'>SIEL</a></li>
+			<li><a href='http://odpiralnicasi.com'>Odpiralni Časi</a></li>
+		</ul>
+		<p>
+			If you're not here, don't worry, I still love you 
+			(and probably follow you on twitter).
+		</p>
+	</div>
+	
+	<div id='box' class='right'>
+		<h2>About</h2>
+		<p>My name is Vid and I am (primarily) an iPhone developer from Slovenia. I am currently writing my diploma at the Faculty of
+			computer and information sciences here in Ljubljana.
+		</p>
+			
+			<a href="http://www.twitter.com/tadelv"><img src="http://twitter-badges.s3.amazonaws.com/follow_me-c.png" alt="Follow tadelv on Twitter"/></a>
+			<h2>Twitter</h2>
+			<p>Shit I talk about, when I'm (usually) not working.</p>
 
-		body {
-			background: rgb(32,44,56);	
-		}
-
-		#twitter {
-			width: 500px; margin:150px auto;
-			vertical-align: middle;
-		}
-
-		#twitter h1 a {
-			display: block; margin: 0 0 20px 0;
-			font: 90px Helvetica, Arial, Sans-Serif; color: rgba(76,103,133,0.6);
-			text-decoration: none;
-		}
-		#twitter h1 a:hover { color: rgba(255,255,255,0.7); }
-
-		#twitter ul {
-			list-style: none; padding: 0 140 0 10px;
-
-		}
-		#twitter ul li {
-			padding: 20px;
-			background: rgba(255,255,255,0.4);
-			border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px;
-		}
-		#twitter ul li a {
-			font: italic 14px/30px Georgia, Times, Serif;
-			color: rgb(54,73,94);
-		}
-		#twitter ul li a:hover { color: rgba(255,255,255,0.8); }
-
-		#twitter ul li span {
-			font: 22px/30px Helvetica, Arial, Sans-Serif; color: #fff;
-		}			
-		#twitter ul li span a {
-			font: 22px/30px Helvetica, Arial, Sans-Serif;
-		}
-
-	</style>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
-<div id="twitter">
-	<h1><a href="http://twitter.com/tadelv">@tadelv</a></h1>
-	<ul id="twitter_update_list"></ul>
+			<ul>
+			<li id='twitter_update_list'></li>
+			</ul>
+			<script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script>
+			<script src="http://twitter.com/statuses/user_timeline/tadelv.json?callback=twitterCallback2&count=3" type="text/javascript"></script>
+			
+			<a href="http://si.linkedin.com/in/tadelv" >
+			          <img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Vid Tadel's profile on LinkedIn">
+			    </a>
+			<h2>Professional</h2>
+			<p>
+				Check out my LinkedIn profile to see what I'm working at and where I am working.
+			</p>
+		
+	</div>	
 </div>
-<script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script>
-<script src="http://twitter.com/statuses/user_timeline/tadelv.json?callback=twitterCallback2&count=1" type="text/javascript"></script>
-</body>
-</html>
