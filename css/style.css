@@ -6,7 +6,7 @@ body {
      font-size: 100%;
      margin: 0px auto 0px auto;
      width: 860px;
-     background-color: #f4f4f4;
+     background-color: #f0f0f0;
      position: relative;
 }
 
@@ -27,11 +27,15 @@ a img {border: 0px;}
 .clear { clear: both; line-height: 1px; font-size: 1px; margin: 1px; }
 #header { margin-bottom: 30px; }
 
+
+
 #content { 
 	margin-top:10px;
     clear: both; 
     font-size: 14px;
 	text-shadow: #FFF 0px 1px 0px;
+	text-align: justify;
+	line-height: 150%;
 }
 
 #footer {
@@ -148,3 +152,45 @@ a img {border: 0px;}
 		padding: 0px;
 		border:none;
 	}
+
+/*
+writings
+*/
+
+desc_time {
+	font-size: 90%;
+	padding-left: 20px;
+}
+	
+/*
+Quotes
+*/
+
+blockquote {
+	display: block;
+	padding: 5px;
+	width: 80%;
+	font-size: 125%;
+	background-color:#ccc;
+}
+/*
+blockquote:before, blockquote:after {
+	color: #333;
+	display: block;
+	font-size: 700%;
+	width: 50px;
+}
+
+blockquote:before {
+	content: open-quote;
+	height: 0;
+	margin-left: -0.55em;
+}
+
+blockquote:after {
+	content: close-quote;
+	height: 50px;
+	margin-top: -70px;
+	margin-left: 85%;
+}
+*/
