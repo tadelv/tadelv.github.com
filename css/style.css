@@ -161,6 +161,12 @@ desc_time {
 	font-size: 90%;
 	padding-left: 20px;
 }
+
+article {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
 	
 /*
 Quotes
