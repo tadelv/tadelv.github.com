@@ -1,0 +1,8 @@
+title: Vid Tadel's personal site
+
+github_url: https://github.com/tadelv
+linkedin_url: https://linkedin.com/in/tadelv
+
+
+exclude: [LICENSE, README.md]
+markdown: kramdown
