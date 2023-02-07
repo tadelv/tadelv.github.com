@@ -127,4 +127,6 @@ List {
 }
 {% endhighlight %}
 
+Another example of this approach can be seen in my Github browser app, [Oktatrack](https://github.com/tadelv/oktatrack/blob/574944145c3a025c1b1c618b9f04c59f777e4279/OktatrackLib/Sources/MasterFeature/MasterView.swift#L49).
+
 If you've come this far - this is not the end. It's just the first step into modern navigation. Imagine you could build your navigation tree with mutually exclusive destinations. Think of an enum for defining what the current navigation path is. This is explored and explained in detail with PointFree's [modern SwiftUI navigation](https://www.pointfree.co/collections/swiftui/modern-swiftui) series from which this exploration also got the inspiration. Check it out and enjoy the benefits of clearly defined navigation structure in your apps.
