@@ -85,7 +85,7 @@ To enable browsing the GraphQL implementation directly on the server, I used Gra
 app.enableGraphiQL(on: "explore")
 {% endhighlight %}
 
-With this, I could browse my GraphQL implementation on `localhost:8080/explore`
+With this, I can make queries and mutations directly at `localhost:8080/explore`
 
 ## On the Client
 
