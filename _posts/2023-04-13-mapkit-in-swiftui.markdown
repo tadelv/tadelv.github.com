@@ -47,4 +47,6 @@ In the end, Kristoffer and I decided to make a little optimisation with the way 
 
 I've also filed a bugreport with Apple. [OpenRadar](https://openradar.appspot.com/radar?id=5618371932454912).
 
-The Takeaway: If you're planning on writing an app using MapKit, make sure to understand your requirements and act accordingly. Packing a lot of annotations into a SwiftUI embedded MapView can cause performance issues.
+> The Takeaway: If you're planning on writing an app using MapKit, make sure to understand your requirements and act accordingly. Packing a lot of annotations into a SwiftUI embedded MapView can cause performance issues.
+
+Oh, and one more thing: You can find the code used for this experiment on my [Github](https://github.com/tadelv/mapkit-swiftui-performance/tree/main)
