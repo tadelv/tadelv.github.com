@@ -19,7 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Vid Tadel
-email: vid@tadel.net
 description: >- # this means to ignore newlines until "baseurl:"
   My personal website. See what I'm working on or get in touch.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -31,6 +30,15 @@ github_username:  tadelv
 theme: minima
 plugins:
   - jekyll-feed
+  
+minima:
+  skin: auto
+  social_links:
+    - platform: github  
+      user_url: "https://github.com/tadelv"
+    - platform: linkedin
+      user_url: "https://linkedin.com/in/tadelv"
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default.
