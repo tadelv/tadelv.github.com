@@ -7,7 +7,9 @@ categories: swiftui mapkit
 
 > N.B.: Clustering in SwiftUI is only possible when using UIViewRepresentable, there is no native SwiftUI view to do it. [See here.](https://developer.apple.com/forums/thread/684811?answerId=681564022#681564022)
 
-I was given an interesting challenge, to inspect performance on an app that uses MapKit, to display certain points of interest. What caught my eye, were UI freezes when zooming out of a particular region. The app displays a lot of annotations, about 7000, but various reports over the internet tell, that MapKit should be able to display them without a problem. So then, what could possibly be the issue? 
+I was given an interesting challenge, to inspect performance on an app that uses MapKit, to display certain points of interest. The app is called [Handiplats](http://www.handiplats.se/), and it helps users from Sweden find parking spots for people with disabilites. It's developed by my colleague [Kristoffer Jälén](https://www.linkedin.com/in/kristofferjalen/).
+
+What caught my eye, were UI freezes when zooming out of a particular region. The app displays a lot of annotations, about 7000, but various reports over the internet tell, that MapKit should be able to display them without a problem. So then, what could possibly be the issue? 
 
 At first, I suspected database access being slow, but that wasn't the case. Even with all the annotations loaded in memory, map view would perform sluggishly. I tried various combinations of incantations, but to no avail. Desperate, I turned again to Apple's own [sample code on clustering](https://developer.apple.com/documentation/mapkit/mkannotationview/decluttering_a_map_with_mapkit_annotation_clustering). Curious, I thought. There is no sample code for clustering in SwiftUI, the sample app is written for UIKit, Apple's original framework for developing user interfaces for the iPhone. That made me think. I rearranged the application to show the map view embedded in a normal `UIViewController`. And I couldn't believe my eyes. Performance returned, buttery smooth animation when zooming out and clustering performing seamlessly, the way it was intended to. 
 
@@ -37,5 +39,9 @@ While SwiftUI code gets stuck adding annotation views, nothing of the sort is pr
 
 ![UIKit stack trace when panning out](/assets/mapkit-instruments-uikit-stack.png)
 *UIKit happily chugging along rendering stuff with Metal*
+
+In the end, Kristoffer and I decided to make a little optimisation with the way annotations are added to the MapView, since using UIKit was not an option he wanted to pursue. When a region change delegate method is called, a `TaskGroup` is created using all CPU cores to filter annotations to be added or removed for the respective region. This helps a bit, lowering the count of annotation views being added when MapView is running in SwiftUI.
+
+I've also filed a bugreport with Apple. [OpenRadar](https://openradar.appspot.com/radar?id=5618371932454912).
 
 The Takeaway: If you're planning on writing an app using MapKit, make sure to understand your requirements and act accordingly. Packing a lot of annotations into a SwiftUI embedded MapView can cause performance issues.
