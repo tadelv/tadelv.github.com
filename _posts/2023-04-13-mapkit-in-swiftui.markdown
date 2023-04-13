@@ -3,6 +3,9 @@ layout: post
 title:  "MapKit performance in SwiftUI"
 date:   2023-04-13 00:00:00 +0100
 categories: swiftui mapkit
+description: Comparing performance between MapKit in UIKit and SwiftUI
+image: /assets/mapkit-instruments1.png
+author: Vid Tadel
 ---
 
 > N.B.: Clustering in SwiftUI is only possible when using UIViewRepresentable, there is no native SwiftUI view to do it. [See here.](https://developer.apple.com/forums/thread/684811?answerId=681564022#681564022)
