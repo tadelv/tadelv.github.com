@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Swift on AWS Lambda"
-date:   2023-05-04 00:00:00 +0100
+date:   2023-05-04 12:00:00 +0100
 categories: swift
 description: Swift can run on AWS Lambda too
 image: /assets/swiftAndLambda.jpg
@@ -192,3 +192,7 @@ struct StarsAndPlanetsContext {
 I stumbled upon an interesting issue there, building AWS SDK on Linux using docker on a Mac can fail if your volume is not case-sensitive. The workaround was for me to create a new case sensitive volume and move my project over there for building.
 
 And yes, once that was done, I was able to interact with my lambda using the client that is also part of the exploratory project. The only actual change I had to do in the client was to change the api endpoint url. And the data is persisted in the cloud, how amazing!
+
+<center>
+<image src="/assets/stars-and-planets-demo.gif">
+<center/>
