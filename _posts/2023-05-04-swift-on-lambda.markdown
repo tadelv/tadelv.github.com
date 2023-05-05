@@ -8,7 +8,7 @@ image: /assets/swiftAndLambda.jpg
 author: Vid Tadel
 ---
 
-It's been a few months since I wrote about my journey with Swift on server. I was busy with other side projects and also prepared for my webinar about developing apps for iOS natively or using cross platform frameworks.
+It's been a few months since I wrote about my journey with Swift on server. I was busy with other side projects and also prepared for my [webinar](https://youtu.be/sU4R4RLasCQ) about developing apps for iOS natively or using cross platform frameworks.
 
 But in all this time, I had one more quest in mind. The Vapor based GraphQL sample app was basically complete, but I wanted more. 
 You've probably heard of [AWS Lambda](https://aws.amazon.com/lambda/). It's a compute service that lets you run code without provisioning or managing servers.
